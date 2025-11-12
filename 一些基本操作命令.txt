@@ -1,0 +1,14 @@
+
+sudo ip link set ens33 up
+
+sudo dhclient -v ens33
+
+
+烧录指令
+source ~/esp/esp-idf/export.sh
+//进入要烧录的代码的总文件夹
+cd ~/esp/Samples/esp32_samples/led
+//三个指令可以分开 建议分开 
+idf.py build
+idf.py flash monitor
+idf.py build flash monitor
