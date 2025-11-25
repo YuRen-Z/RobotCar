@@ -1,0 +1,184 @@
+0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Pr�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1760
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 255d15ac85949c479961ddc5d7ef7f6b20b12e5df7a1c0070716a79c65ab4243
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF v5.1.2-1-g3b62af741a 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Nov 20 2025 14:31:44[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (49) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (58) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (63) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (68) boot: Enabling RNG early entropy source...[0m
+[0;32mI (73) boot: Partition Table:[0m
+[0;32mI (77) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (84) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (106) boot: End of partition table[0m
+[0;32mI (110) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dc24h ( 56356) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001dc4c vaddr=3fc91600 size=023cch (  9164) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20448h (132168) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=00040470 vaddr=3fc939cc size=00540h (  1344) load[0m
+[0;32mI (151) esp_image: segment 4: paddr=000409b8 vaddr=40374000 size=0d580h ( 54656) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=0004df40 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu up.[0m
+[0;32mI (188) cpu_start: Starting app cpu, entry point is 0x40375280[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     main[0m
+[0;32mI (214) cpu_start: App version:      1[0m
+[0;32mI (218) cpu_start: Compile time:     Nov 20 2025 14:31:38[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  875f991c317892db...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.1.2-1-g3b62af741a[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC948F8 len 00054E18 (339 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (271) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: gd[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) app_start: Starting scheduler on CPU0[0m
+[0;32mI (311) app_start: Starting scheduler on CPU1[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (1325) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1325) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1333) BATTERY: calibration scheme version is Curve Fitting[0m
+[0;32mI (1339) BATTERY: Calibration Success[0m
+[0;32mI (1343) Encoder: Init pcnt driver to decode[0m
+[0;32mI (1343) BATTERY: Start Battery_Task with core:1[0m
+[0;32mI (1348) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1363) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1372) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1381) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1391) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1400) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1409) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1428) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1447) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1456) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1466) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1475) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1484) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1493) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1503) PWM_MOTOR: Init PwmMotor Device[0m
+[0;32mI (1508) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1517) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1526) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1535) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1545) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1554) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1564) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1573) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1582) RACE: =====================电池状态=====================[0m
+[0;32mI (1582) MOTOR: Start Motor_Task with core:1[0m
+[0;32mI (1589) RACE: Voltage:3.95V[0m
+[0;32mI (1598) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (1802) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (2002) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (2202) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (2402) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (2602) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (2802) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (3002) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (3202) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (3402) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (3602) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (3802) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (4002) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (4202) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (4402) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (4602) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (4802) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (5002) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (5202) RACE: Encoder:0, 2, 0, 1[0m
+[0;32mI (5402) RACE: Encoder:0, 2, 0, 1[0m
+[0;32mI (5602) RACE: Encoder:0, 2, 0, 1[0m
+[0;32mI (5802) RACE: Encoder:0, 2, 0, 1[0m
+[0;32mI (6002) RACE: Encoder:78, 52, 66, 52[0m
+[0;32mI (6202) RACE: Encoder:962, 694, 874, 738[0m
+[0;32mI (6402) RACE: Encoder:1478, 1429, 1451, 1402[0m
+[0;32mI (6602) RACE: Encoder:1915, 1877, 1943, 1947[0m
+[0;32mI (6802) RACE: Encoder:2333, 2326, 2359, 2351[0m
+[0;32mI (7002) RACE: Encoder:2746, 2730, 2766, 2753[0m
+[0;32mI (7202) RACE: Encoder:3159, 3149, 3179, 3164[0m
+[0;32mI (7402) RACE: Encoder:3579, 3574, 3595, 3581[0m
+[0;32mI (7602) RACE: Encoder:3990, 3988, 4005, 3994[0m
+[0;32mI (7802) RACE: Encoder:4404, 4400, 4421, 4407[0m
+[0;32mI (8002) RACE: Encoder:4820, 4814, 4834, 4822[0m
+[0;32mI (8202) RACE: Encoder:5230, 5226, 5245, 5234[0m
+[0;32mI (8402) RACE: Encoder:5648, 5641, 5539, 5649[0m
+[0;32mI (8602) RACE: Encoder:6052, 6049, 5559, 6057[0m
+[0;32mI (8802) RACE: Encoder:6464, 6461, 5559, 6467[0m
+[0;32mI (9002) RACE: Encoder:6880, 6876, 5954, 6881[0m
+[0;32mI (9202) RACE: Encoder:7297, 7293, 6659, 7302[0m
+[0;32mI (9402) RACE: Encoder:7715, 7708, 7163, 7718[0m
+[0;32mI (9602) RACE: Encoder:8129, 8123, 7668, 8132[0m
+[0;32mI (9802) RACE: Encoder:8543, 8538, 8125, 8545[0m
+[0;32mI (10002) RACE: Encoder:8957, 8951, 8537, 8959[0m
+[0;32mI (10202) RACE: Encoder:9372, 9367, 8949, 9373[0m
+[0;32mI (10402) RACE: Encoder:9786, 9779, 9362, 9789[0m
+[0;32mI (10602) RACE: Encoder:10201, 10194, 9777, 10202[0m
+[0;32mI (10802) RACE: Encoder:10614, 10607, 10189, 10616[0m
+[0;32mI (11002) RACE: Encoder:11029, 11022, 10604, 11033[0m
+[0;32mI (11202) RACE: Encoder:11441, 11436, 11018, 11445[0m
+[0;32mI (11402) RACE: Encoder:11855, 11849, 11430, 11858[0m
+[0;32mI (11602) RACE: Encoder:12270, 12263, 11844, 12269[0m
+[0;32mI (11802) RACE: Encoder:12682, 12677, 12258, 12682[0m
+[0;32mI (12002) RACE: Encoder:13097, 13091, 12671, 13097[0m
+[0;32mI (12202) RACE: Encoder:13510, 13505, 13086, 13510[0m
+[0;32mI (12402) RACE: Encoder:13924, 13918, 13498, 13925[0m
+[0;32mI (12602) RACE: Encoder:14338, 14331, 13913, 14339[0m
+[0;32mI (12802) RACE: Encoder:14751, 14744, 14327, 14752[0m
+[0;32mI (13002) RACE: Encoder:15167, 15159, 14741, 15168[0m
+[0;32mI (13202) RACE: Encoder:15578, 15571, 15155, 15580[0m
+[0;32mI (13402) RACE: Encoder:15992, 15984, 15567, 15994[0m
+[0;32mI (13602) RACE: Encoder:16406, 16399, 15982, 16409[0m
+[0;32mI (13802) RACE: Encoder:16819, 16811, 16396, 16817[0m
+[0;32mI (14002) RACE: Encoder:17232, 17224, 16809, 17233[0m
+[0;32mI (14202) RACE: KEY 1 PRESS , MANDATORY STOP[0m
+[0;32mI (14202) RACE: Encoder:17648, 17641, 17226, 17651[0m
+[0;32mI (14402) RACE: Encoder:17891, 17890, 17457, 17893[0m
+[0;32mI (14602) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (14802) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (15002) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (15202) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (15402) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (15602) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (15802) RACE: Encoder:17890, 17891, 17456, 17893[0m
+[0;32mI (16002) RACE: Encoder:17906, 17891, 17456, 17893[0m
+[0;32mI (16202) RACE: Encoder:17906, 17891, 17456, 17893[0m
+[0;32mI (16402) RACE: Encoder:17906, 17891, 17456, 17893[0m
+[0;32mI (16602) RACE: Encoder:17906, 17891, 17456, 17893[0m
+[0;32mI (16802) RACE: Encoder:17906, 17891, 17456, 17892[0m
+[0;32mI (17002) RACE: Encoder:17906, 17889, 17456, 17891[0m
+[0;32mI (17202) RACE: Encoder:17906, 17888, 17456, 17891[0m
+[0;32mI (17402) RACE: Encoder:17906, 17888, 17456, 17891[0m
+[0;32mI (17602) RACE: Encoder:17906, 17888, 17456, 17891[0m
+[0;32mI (17802) RACE: Encoder:17906, 17888, 17456, 17891[0m
+[0;32mI (18002) RACE: Encoder:17906, 17888, 17456, 17891[0m
+[0;32mI (18202) RACE: Encoder:17906, 17888, 17456, 17891[0m

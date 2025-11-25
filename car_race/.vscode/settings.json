@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "car_motion.h": "c",
-        "stdint.h": "c"
-    }
-}

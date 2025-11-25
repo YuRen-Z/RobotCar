@@ -1,0 +1,384 @@
+plication information:[0m
+[0;32mI (210) cpu_start: Project name:     main[0m
+[ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1760
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 255d15ac85949c479961ddc5d7ef7f6b20b12e5df7a1c0070716a79c65ab4243
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF v5.1.2-1-g3b62af741a 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Nov 20 2025 14:31:44[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (50) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (58) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (63) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (68) boot: Enabling RNG early entropy source...[0m
+[0;32mI (73) boot: Partition Table:[0m
+[0;32mI (77) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (84) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (106) boot: End of partition table[0m
+[0;32mI (111) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dcc4h ( 56516) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001dcec vaddr=3fc91600 size=0232ch (  9004) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=20c18h (134168) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=00040c40 vaddr=3fc9392c size=005e0h (  1504) load[0m
+[0;32mI (152) esp_image: segment 4: paddr=00041228 vaddr=40374000 size=0d580h ( 54656) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=0004e7b0 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu up.[0m
+[0;32mI (188) cpu_start: Starting app cpu, entry point is 0x40375280[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     main[0m
+[0;32mI (214) cpu_start: App version:      1[0m
+[0;32mI (219) cpu_start: Compile time:     Nov 20 2025 14:31:38[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  5bfbe6e08b6c6c00...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.1.2-1-g3b62af741a[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FC94900 len 00054E10 (339 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (271) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (285) spi_flash: detected chip: gd[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) app_start: Starting scheduler on CPU0[0m
+[0;32mI (311) app_start: Starting scheduler on CPU1[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (1325) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1325) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1333) BATTERY: calibration scheme version is Curve Fitting[0m
+[0;32mI (1339) BATTERY: Calibration Success[0m
+[0;32mI (1343) Encoder: Init pcnt driver to decode[0m
+[0;32mI (1343) BATTERY: Start Battery_Task with core:1[0m
+[0;32mI (1348) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1363) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1372) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1381) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1391) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1400) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1409) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1428) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1447) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1456) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1466) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1475) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1484) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1493) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1503) PWM_MOTOR: Init PwmMotor Device[0m
+[0;32mI (1508) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1517) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1526) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1535) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1545) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1554) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1564) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1573) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1582) RACE: FSM 任务已启动。[0m
+[0;32mI (1582) MOTOR: Start Motor_Task with core:1[0m
+[0;32mI (1586) RACE: =====================电池状态=====================[0m
+[0;32mI (1598) RACE: Voltage:7.21V[0m
+[0;32mI (1602) RACE: distance now: 0.000000, State: 0[0m
+[0;32mI (1707) RACE: 比赛开始...[0m
+[0;32mI (1707) RACE: 已经进入第一个直线赛道[0m
+[0;32mI (1717) RACE: distance now: 0.000000, State: 1[0m
+[0;32mI (1727) RACE: distance now: 0.000000, State: 1[0m
+[0;32mI (1737) RACE: distance now: 2.000000, State: 1[0m
+[0;32mI (1747) RACE: distance now: 3.000000, State: 1[0m
+[0;32mI (1757) RACE: distance now: 4.000000, State: 1[0m
+[0;32mI (1767) RACE: distance now: 7.000000, State: 1[0m
+[0;32mI (1777) RACE: distance now: 11.000000, State: 1[0m
+[0;32mI (1787) RACE: distance now: 17.000000, State: 1[0m
+[0;32mI (1797) RACE: distance now: 24.000000, State: 1[0m
+[0;32mI (1807) RACE: distance now: 32.000000, State: 1[0m
+[0;32mI (1817) RACE: distance now: 40.000000, State: 1[0m
+[0;32mI (1827) RACE: distance now: 50.000000, State: 1[0m
+[0;32mI (1837) RACE: distance now: 61.000000, State: 1[0m
+[0;32mI (1847) RACE: distance now: 73.000000, State: 1[0m
+[0;32mI (1857) RACE: distance now: 85.000000, State: 1[0m
+[0;32mI (1867) RACE: distance now: 98.000000, State: 1[0m
+[0;32mI (1877) RACE: distance now: 112.000000, State: 1[0m
+[0;32mI (1887) RACE: distance now: 126.000000, State: 1[0m
+[0;32mI (1897) RACE: distance now: 141.000000, State: 1[0m
+[0;32mI (1907) RACE: distance now: 156.000000, State: 1[0m
+[0;32mI (1917) RACE: distance now: 172.000000, State: 1[0m
+[0;32mI (1927) RACE: distance now: 188.000000, State: 1[0m
+[0;32mI (1937) RACE: distance now: 205.000000, State: 1[0m
+[0;32mI (1947) RACE: distance now: 222.000000, State: 1[0m
+[0;32mI (1957) RACE: distance now: 240.000000, State: 1[0m
+[0;32mI (1967) RACE: distance now: 258.000000, State: 1[0m
+[0;32mI (1977) RACE: distance now: 276.000000, State: 1[0m
+[0;32mI (1987) RACE: distance now: 294.000000, State: 1[0m
+[0;32mI (1997) RACE: distance now: 313.000000, State: 1[0m
+[0;32mI (2007) RACE: distance now: 331.000000, State: 1[0m
+[0;32mI (2017) RACE: distance now: 351.000000, State: 1[0m
+[0;32mI (2027) RACE: distance now: 370.000000, State: 1[0m
+[0;32mI (2037) RACE: distance now: 389.000000, State: 1[0m
+[0;32mI (2047) RACE: distance now: 408.000000, State: 1[0m
+[0;32mI (2057) RACE: distance now: 428.000000, State: 1[0m
+[0;32mI (2067) RACE: distance now: 448.000000, State: 1[0m
+[0;32mI (2077) RACE: distance now: 468.000000, State: 1[0m
+[0;32mI (2087) RACE: distance now: 488.000000, State: 1[0m
+[0;32mI (2097) RACE: distance now: 508.000000, State: 1[0m
+[0;32mI (2107) RACE: distance now: 528.000000, State: 1[0m
+[0;32mI (2117) RACE: distance now: 548.000000, State: 1[0m
+[0;32mI (2127) RACE: distance now: 568.000000, State: 1[0m
+[0;32mI (2137) RACE: distance now: 588.000000, State: 1[0m
+[0;32mI (2147) RACE: distance now: 609.000000, State: 1[0m
+[0;32mI (2157) RACE: distance now: 629.000000, State: 1[0m
+[0;32mI (2167) RACE: distance now: 650.000000, State: 1[0m
+[0;32mI (2177) RACE: distance now: 670.000000, State: 1[0m
+[0;32mI (2187) RACE: distance now: 691.000000, State: 1[0m
+[0;32mI (2197) RACE: distance now: 712.000000, State: 1[0m
+[0;32mI (2207) RACE: distance now: 732.000000, State: 1[0m
+[0;32mI (2217) RACE: distance now: 753.000000, State: 1[0m
+[0;32mI (2227) RACE: distance now: 774.000000, State: 1[0m
+[0;32mI (2237) RACE: distance now: 795.000000, State: 1[0m
+[0;32mI (2247) RACE: distance now: 815.000000, State: 1[0m
+[0;32mI (2257) RACE: distance now: 836.000000, State: 1[0m
+[0;32mI (2267) RACE: distance now: 857.000000, State: 1[0m
+[0;32mI (2277) RACE: distance now: 878.000000, State: 1[0m
+[0;32mI (2287) RACE: distance now: 899.000000, State: 1[0m
+[0;32mI (2297) RACE: distance now: 920.000000, State: 1[0m
+[0;32mI (2307) RACE: distance now: 941.000000, State: 1[0m
+[0;32mI (2317) RACE: distance now: 962.000000, State: 1[0m
+[0;32mI (2327) RACE: distance now: 983.000000, State: 1[0m
+[0;32mI (2337) RACE: distance now: 1004.000000, State: 1[0m
+[0;32mI (2347) RACE: distance now: 1025.000000, State: 1[0m
+[0;32mI (2357) RACE: distance now: 1045.000000, State: 1[0m
+[0;32mI (2367) RACE: distance now: 1066.000000, State: 1[0m
+[0;32mI (2377) RACE: distance now: 1087.000000, State: 1[0m
+[0;32mI (2387) RACE: distance now: 1108.000000, State: 1[0m
+[0;32mI (2397) RACE: distance now: 1129.000000, State: 1[0m
+[0;32mI (2407) RACE: distance now: 1150.000000, State: 1[0m
+[0;32mI (2417) RACE: distance now: 1171.000000, State: 1[0m
+[0;32mI (2427) RACE: distance now: 1192.000000, State: 1[0m
+[0;32mI (2437) RACE: distance now: 1213.000000, State: 1[0m
+[0;32mI (2447) RACE: distance now: 1233.000000, State: 1[0m
+[0;32mI (2457) RACE: distance now: 1254.000000, State: 1[0m
+[0;32mI (2467) RACE: distance now: 1275.000000, State: 1[0m
+[0;32mI (2477) RACE: distance now: 1296.000000, State: 1[0m
+[0;32mI (2487) RACE: distance now: 1317.000000, State: 1[0m
+[0;32mI (2497) RACE: distance now: 1338.000000, State: 1[0m
+[0;32mI (2507) RACE: distance now: 1359.000000, State: 1[0m
+[0;32mI (2517) RACE: distance now: 1380.000000, State: 1[0m
+[0;32mI (2527) RACE: distance now: 1401.000000, State: 1[0m
+[0;32mI (2537) RACE: distance now: 1422.000000, State: 1[0m
+[0;32mI (2547) RACE: distance now: 1443.000000, State: 1[0m
+[0;32mI (2557) RACE: distance now: 1464.000000, State: 1[0m
+[0;32mI (2567) RACE: distance now: 1485.000000, State: 1[0m
+[0;32mI (2577) RACE: distance now: 1506.000000, State: 1[0m
+[0;32mI (2587) RACE: distance now: 1527.000000, State: 1[0m
+[0;32mI (2597) RACE: distance now: 1547.000000, State: 1[0m
+[0;32mI (2607) RACE: distance now: 1568.000000, State: 1[0m
+[0;32mI (2617) RACE: distance now: 1589.000000, State: 1[0m
+[0;32mI (2627) RACE: distance now: 1610.000000, State: 1[0m
+[0;32mI (2637) RACE: distance now: 1631.000000, State: 1[0m
+[0;32mI (2647) RACE: distance now: 1651.000000, State: 1[0m
+[0;32mI (2657) RACE: distance now: 1672.000000, State: 1[0m
+[0;32mI (2667) RACE: distance now: 1693.000000, State: 1[0m
+[0;32mI (2677) RACE: distance now: 1713.000000, State: 1[0m
+[0;32mI (2687) RACE: distance now: 1734.000000, State: 1[0m
+[0;32mI (2697) RACE: distance now: 1755.000000, State: 1[0m
+[0;32mI (2707) RACE: distance now: 1776.000000, State: 1[0m
+[0;32mI (2717) RACE: distance now: 1796.000000, State: 1[0m
+[0;32mI (2727) RACE: distance now: 1817.000000, State: 1[0m
+[0;32mI (2737) RACE: distance now: 1838.000000, State: 1[0m
+[0;32mI (2747) RACE: distance now: 1859.000000, State: 1[0m
+[0;32mI (2757) RACE: distance now: 1879.000000, State: 1[0m
+[0;32mI (2767) RACE: distance now: 1900.000000, State: 1[0m
+[0;32mI (2777) RACE: distance now: 1921.000000, State: 1[0m
+[0;32mI (2787) RACE: distance now: 1942.000000, State: 1[0m
+[0;32mI (2797) RACE: distance now: 1962.000000, State: 1[0m
+[0;32mI (2807) RACE: distance now: 1983.000000, State: 1[0m
+[0;32mI (2817) RACE: distance now: 2004.000000, State: 1[0m
+[0;32mI (2827) RACE: distance now: 2024.000000, State: 1[0m
+[0;32mI (2837) RACE: distance now: 2045.000000, State: 1[0m
+[0;32mI (2847) RACE: distance now: 2066.000000, State: 1[0m
+[0;32mI (2857) RACE: distance now: 2086.000000, State: 1[0m
+[0;32mI (2867) RACE: distance now: 2107.000000, State: 1[0m
+[0;32mI (2877) RACE: distance now: 2127.000000, State: 1[0m
+[0;32mI (2887) RACE: distance now: 2148.000000, State: 1[0m
+[0;32mI (2897) RACE: distance now: 2169.000000, State: 1[0m
+[0;32mI (2907) RACE: distance now: 2189.000000, State: 1[0m
+[0;32mI (2917) RACE: distance now: 2210.000000, State: 1[0m
+[0;32mI (2927) RACE: distance now: 2231.000000, State: 1[0m
+[0;32mI (2937) RACE: distance now: 2251.000000, State: 1[0m
+[0;32mI (2947) RACE: distance now: 2272.000000, State: 1[0m
+[0;32mI (2957) RACE: distance now: 2293.000000, State: 1[0m
+[0;32mI (2967) RACE: distance now: 2313.000000, State: 1[0m
+[0;32mI (2977) RACE: distance now: 2334.000000, State: 1[0m
+[0;32mI (2987) RACE: distance now: 2355.000000, State: 1[0m
+[0;32mI (2997) RACE: distance now: 2376.000000, State: 1[0m
+[0;32mI (3007) RACE: distance now: 2397.000000, State: 1[0m
+[0;32mI (3017) RACE: distance now: 2418.000000, State: 1[0m
+[0;32mI (3027) RACE: distance now: 2438.000000, State: 1[0m
+[0;32mI (3037) RACE: distance now: 2459.000000, State: 1[0m
+[0;32mI (3047) RACE: distance now: 2480.000000, State: 1[0m
+[0;32mI (3057) RACE: distance now: 2501.000000, State: 1[0m
+[0;32mI (3067) RACE: distance now: 2522.000000, State: 1[0m
+[0;32mI (3077) RACE: distance now: 2543.000000, State: 1[0m
+[0;32mI (3087) RACE: distance now: 2564.000000, State: 1[0m
+[0;32mI (3097) RACE: distance now: 2585.000000, State: 1[0m
+[0;32mI (3107) RACE: distance now: 2606.000000, State: 1[0m
+[0;32mI (3117) RACE: distance now: 2626.000000, State: 1[0m
+[0;32mI (3127) RACE: distance now: 2647.000000, State: 1[0m
+[0;32mI (3137) RACE: distance now: 2668.000000, State: 1[0m
+[0;32mI (3147) RACE: distance now: 2689.000000, State: 1[0m
+[0;32mI (3157) RACE: distance now: 2710.000000, State: 1[0m
+[0;32mI (3167) RACE: distance now: 2730.000000, State: 1[0m
+[0;32mI (3177) RACE: distance now: 2751.000000, State: 1[0m
+[0;32mI (3187) RACE: distance now: 2772.000000, State: 1[0m
+[0;32mI (3197) RACE: distance now: 2793.000000, State: 1[0m
+[0;32mI (3207) RACE: distance now: 2813.000000, State: 1[0m
+[0;32mI (3217) RACE: distance now: 2834.000000, State: 1[0m
+[0;32mI (3227) RACE: distance now: 2854.000000, State: 1[0m
+[0;32mI (3237) RACE: distance now: 2875.000000, State: 1[0m
+[0;32mI (3247) RACE: distance now: 2896.000000, State: 1[0m
+[0;32mI (3257) RACE: distance now: 2917.000000, State: 1[0m
+[0;32mI (3267) RACE: distance now: 2938.000000, State: 1[0m
+[0;32mI (3277) RACE: distance now: 2959.000000, State: 1[0m
+[0;32mI (3287) RACE: distance now: 2979.000000, State: 1[0m
+[0;32mI (3297) RACE: distance now: 3000.000000, State: 1[0m
+[0;32mI (3307) RACE: distance now: 3021.000000, State: 1[0m
+[0;32mI (3317) RACE: distance now: 3042.000000, State: 1[0m
+[0;32mI (3327) RACE: distance now: 3063.000000, State: 1[0m
+[0;32mI (3337) RACE: distance now: 3084.000000, State: 1[0m
+[0;32mI (3347) RACE: distance now: 3105.000000, State: 1[0m
+[0;32mI (3357) RACE: distance now: 3125.000000, State: 1[0m
+[0;32mI (3367) RACE: distance now: 3146.000000, State: 1[0m
+[0;32mI (3377) RACE: distance now: 3167.000000, State: 1[0m
+[0;32mI (3387) RACE: distance now: 3188.000000, State: 1[0m
+[0;32mI (3397) RACE: distance now: 3209.000000, State: 1[0m
+[0;32mI (3407) RACE: distance now: 3230.000000, State: 1[0m
+[0;32mI (3417) RACE: distance now: 3250.000000, State: 1[0m
+[0;32mI (3427) RACE: distance now: 3271.000000, State: 1[0m
+[0;32mI (3437) RACE: distance now: 3292.000000, State: 1[0m
+[0;32mI (3447) RACE: distance now: 3313.000000, State: 1[0m
+[0;32mI (3457) RACE: distance now: 3334.000000, State: 1[0m
+[0;32mI (3467) RACE: distance now: 3354.000000, State: 1[0m
+[0;32mI (3477) RACE: distance now: 3375.000000, State: 1[0m
+[0;32mI (3487) RACE: distance now: 3396.000000, State: 1[0m
+[0;32mI (3497) RACE: distance now: 3417.000000, State: 1[0m
+[0;32mI (3507) RACE: distance now: 3438.000000, State: 1[0m
+[0;32mI (3517) RACE: distance now: 3458.000000, State: 1[0m
+[0;32mI (3527) RACE: distance now: 3479.000000, State: 1[0m
+[0;32mI (3537) RACE: distance now: 3500.000000, State: 1[0m
+[0;32mI (3547) RACE: distance now: 3520.000000, State: 1[0m
+[0;32mI (3557) RACE: distance now: 3541.000000, State: 1[0m
+[0;32mI (3557) RACE: MANDATORY STOP[0m
+[0;32mI (3567) RACE: distance now: 16.000000, State: 1[0m
+[0;32mI (3577) RACE: distance now: 28.000000, State: 1[0m
+[0;32mI (3587) RACE: distance now: 37.000000, State: 1[0m
+[0;32mI (3597) RACE: distance now: 42.000000, State: 1[0m
+[0;32mI (3607) RACE: distance now: 45.000000, State: 1[0m
+[0;32mI (3617) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3627) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3637) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3647) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3657) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3667) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3677) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3687) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3697) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3707) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3717) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3727) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3737) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3747) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3757) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3767) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3777) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3787) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3797) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3807) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3817) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3827) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3837) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3847) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3857) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3867) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3877) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3887) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3897) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3907) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3917) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3927) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3937) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3947) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3957) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3967) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3977) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3987) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (3997) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4007) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4017) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4027) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4037) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4047) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4057) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4067) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4077) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4087) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4097) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4107) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4117) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4127) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4137) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4147) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4157) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4167) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4177) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4187) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4197) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4207) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4217) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4227) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4237) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4247) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4257) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4267) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4277) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4287) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4297) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4307) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4317) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4327) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4337) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4347) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4357) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4367) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4377) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4387) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4397) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4407) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4417) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4427) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4437) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4447) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4457) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4467) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4477) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4487) RACE: distance now: 47.000000, State: 1[0m
+[0;32mI (4497) RACE: distance 

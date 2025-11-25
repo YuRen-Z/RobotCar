@@ -12,12 +12,12 @@ extern "C" {
 // #define ROBOT_L 0.13f
 // #define ROBOT_W 0.14f
 
-#define ROBOT_WIDTH                  (0.140f)
-#define ROBOT_LENGTH                 (0.130f)
+#define ROBOT_WIDTH                  (0.165f)
+#define ROBOT_LENGTH                 (0.185f)
 
 // 小车上下轮子、左右轮子间距和的一半。
 // Half of the distance between the upper and lower wheels and the left and right wheels of the car.
-#define ROBOT_APB                    (0.135f)
+#define ROBOT_APB                    (0.1134f)
 
 
 #define ROBOT_SPIN_SCALE             (5.0f)

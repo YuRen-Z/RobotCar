@@ -1,0 +1,591 @@
+
+[0;32mI (271) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2a (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x1760
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc00
+load:0x403cc700,len:0x2e04
+SHA-256 comparison failed:
+Calculated: 255d15ac85949c479961ddc5d7ef7f6b20b12e5df7a1c0070716a79c65ab4243
+Expected: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Attempting to boot anyway...
+entry 0x403c9908
+[0;32mI (45) boot: ESP-IDF v5.1.2-1-g3b62af741a 2nd stage bootloader[0m
+[0;32mI (45) boot: compile time Nov 20 2025 14:31:44[0m
+[0;32mI (45) boot: Multicore bootloader[0m
+[0;32mI (50) boot: chip revision: v0.2[0m
+[0;32mI (53) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (58) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (63) boot.esp32s3: SPI Flash Size : 4MB[0m
+[0;32mI (68) boot: Enabling RNG early entropy source...[0m
+[0;32mI (73) boot: Partition Table:[0m
+[0;32mI (77) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (84) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (91) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (99) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (106) boot: End of partition table[0m
+[0;32mI (111) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0dcech ( 56556) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0001dd14 vaddr=3fc91600 size=02304h (  8964) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=207f0h (133104) map[0m
+[0;32mI (151) esp_image: segment 3: paddr=00040818 vaddr=3fc93904 size=00608h (  1544) load[0m
+[0;32mI (151) esp_image: segment 4: paddr=00040e28 vaddr=40374000 size=0d580h ( 54656) load[0m
+[0;32mI (165) esp_image: segment 5: paddr=0004e3b0 vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) cpu_start: Multicore app[0m
+[0;32mI (188) cpu_start: Pro cpu up.[0m
+[0;32mI (188) cpu_start: Starting app cpu, entry point is 0x40375280[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) cpu_start: Application information:[0m
+[0;32mI (210) cpu_start: Project name:     main[0m
+[0;32mI (214) cpu_start: App version:      1[0m
+[0;32mI (219) cpu_start: Compile time:     Nov 20 2025 14:31:38[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  213d173d98889f62...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.1.2-1-g3b62af741a[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (242) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FC94900 len 00054E10 (339 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (271) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (284) spi_flash: detected chip: gd[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) app_start: Starting scheduler on CPU0[0m
+[0;32mI (311) app_start: Starting scheduler on CPU1[0m
+[0;32mI (311) main_task: Started on CPU0[0m
+[0;32mI (321) main_task: Calling app_main()[0m
+[0;32mI (1325) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1325) gpio: GPIO[42]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1333) BATTERY: calibration scheme version is Curve Fitting[0m
+[0;32mI (1339) BATTERY: Calibration Success[0m
+[0;32mI (1343) BATTERY: Start Battery_Task with core:1[0m
+[0;32mI (1343) Encoder: Init pcnt driver to decode[0m
+[0;32mI (1354) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1363) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1372) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1381) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1391) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1400) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1409) gpio: GPIO[48]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) gpio: GPIO[47]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1428) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1447) gpio: GPIO[11]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1456) gpio: GPIO[12]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1466) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1475) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1484) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1493) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1503) PWM_MOTOR: Init PwmMotor Device[0m
+[0;32mI (1508) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1517) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1526) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1535) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1545) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1554) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1564) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1573) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1582) MOTOR: Start Motor_Task with core:1[0m
+[0;32mI (1582) RACE: Encoder now: 0[0m
+[0;32mI (1590) RACE: Encoder:0, 0, 0, 0[0m
+[0;32mI (1594) RACE: =====================电池状态=====================[0m
+[0;32mI (1602) RACE: Voltage:7.75V[0m
+[0;32mI (1605) RACE: =====================speed状态=====================[0m
+[0;32mI (1612) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (1821) RACE: Encoder now: 83[0m
+[0;32mI (1821) RACE: Encoder:86, 75, 91, 83[0m
+[0;32mI (1821) RACE: =====================电池状态=====================[0m
+[0;32mI (1825) RACE: Voltage:7.67V[0m
+[0;32mI (1828) RACE: =====================speed状态=====================[0m
+[0;32mI (1835) RACE: m1_speed: 0.250434,m2_speed: 0.250434,m3_speed: 0.250434,m4_speed: 0.250434[0m
+[0;32mI (2044) RACE: Encoder now: 475[0m
+[0;32mI (2044) RACE: Encoder:470, 469, 490, 472[0m
+[0;32mI (2044) RACE: =====================电池状态=====================[0m
+[0;32mI (2048) RACE: Voltage:7.67V[0m
+[0;32mI (2052) RACE: =====================speed状态=====================[0m
+[0;32mI (2059) RACE: m1_speed: 0.385283,m2_speed: 0.385283,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (2268) RACE: Encoder now: 939[0m
+[0;32mI (2268) RACE: Encoder:934, 930, 956, 937[0m
+[0;32mI (2268) RACE: =====================电池状态=====================[0m
+[0;32mI (2272) RACE: Voltage:7.67V[0m
+[0;32mI (2276) RACE: =====================speed状态=====================[0m
+[0;32mI (2283) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (2492) RACE: Encoder now: 1406[0m
+[0;32mI (2492) RACE: Encoder:1400, 1396, 1423, 1406[0m
+[0;32mI (2492) RACE: =====================电池状态=====================[0m
+[0;32mI (2497) RACE: Voltage:7.68V[0m
+[0;32mI (2500) RACE: =====================speed状态=====================[0m
+[0;32mI (2507) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (2716) RACE: Encoder now: 1872[0m
+[0;32mI (2716) RACE: Encoder:1866, 1861, 1889, 1872[0m
+[0;32mI (2716) RACE: =====================电池状态=====================[0m
+[0;32mI (2721) RACE: Voltage:7.69V[0m
+[0;32mI (2724) RACE: =====================speed状态=====================[0m
+[0;32mI (2731) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (2940) RACE: Encoder now: 2337[0m
+[0;32mI (2940) RACE: Encoder:2331, 2327, 2353, 2337[0m
+[0;32mI (2940) RACE: =====================电池状态=====================[0m
+[0;32mI (2945) RACE: Voltage:7.69V[0m
+[0;32mI (2948) RACE: =====================speed状态=====================[0m
+[0;32mI (2955) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (3164) RACE: Encoder now: 2802[0m
+[0;32mI (3164) RACE: Encoder:2797, 2792, 2819, 2803[0m
+[0;32mI (3164) RACE: =====================电池状态=====================[0m
+[0;32mI (3169) RACE: Voltage:7.67V[0m
+[0;32mI (3172) RACE: =====================speed状态=====================[0m
+[0;32mI (3179) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (3388) RACE: Encoder now: 3268[0m
+[0;32mI (3388) RACE: Encoder:3263, 3257, 3283, 3269[0m
+[0;32mI (3388) RACE: =====================电池状态=====================[0m
+[0;32mI (3393) RACE: Voltage:7.68V[0m
+[0;32mI (3396) RACE: =====================speed状态=====================[0m
+[0;32mI (3403) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (3612) RACE: Encoder now: 3733[0m
+[0;32mI (3612) RACE: Encoder:3727, 3721, 3750, 3735[0m
+[0;32mI (3612) RACE: =====================电池状态=====================[0m
+[0;32mI (3617) RACE: Voltage:7.69V[0m
+[0;32mI (3620) RACE: =====================speed状态=====================[0m
+[0;32mI (3627) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (3836) RACE: Encoder now: 4198[0m
+[0;32mI (3836) RACE: Encoder:4193, 4186, 4215, 4200[0m
+[0;32mI (3836) RACE: =====================电池状态=====================[0m
+[0;32mI (3841) RACE: Voltage:7.68V[0m
+[0;32mI (3844) RACE: =====================speed状态=====================[0m
+[0;32mI (3851) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (4060) RACE: Encoder now: 4663[0m
+[0;32mI (4060) RACE: Encoder:4658, 4651, 4681, 4665[0m
+[0;32mI (4060) RACE: =====================电池状态=====================[0m
+[0;32mI (4065) RACE: Voltage:7.69V[0m
+[0;32mI (4068) RACE: =====================speed状态=====================[0m
+[0;32mI (4075) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (4284) RACE: Encoder now: 5128[0m
+[0;32mI (4284) RACE: Encoder:5124, 5116, 5144, 5129[0m
+[0;32mI (4284) RACE: =====================电池状态=====================[0m
+[0;32mI (4289) RACE: Voltage:7.67V[0m
+[0;32mI (4292) RACE: =====================speed状态=====================[0m
+[0;32mI (4299) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (4508) RACE: Encoder now: 5593[0m
+[0;32mI (4508) RACE: Encoder:5589, 5581, 5609, 5595[0m
+[0;32mI (4508) RACE: =====================电池状态=====================[0m
+[0;32mI (4513) RACE: Voltage:7.71V[0m
+[0;32mI (4516) RACE: =====================speed状态=====================[0m
+[0;32mI (4523) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (4732) RACE: Encoder now: 6059[0m
+[0;32mI (4732) RACE: Encoder:6055, 6046, 6075, 6060[0m
+[0;32mI (4732) RACE: =====================电池状态=====================[0m
+[0;32mI (4737) RACE: Voltage:7.67V[0m
+[0;32mI (4740) RACE: =====================speed状态=====================[0m
+[0;32mI (4747) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (4956) RACE: Encoder now: 6524[0m
+[0;32mI (4956) RACE: Encoder:6520, 6511, 6540, 6526[0m
+[0;32mI (4956) RACE: =====================电池状态=====================[0m
+[0;32mI (4961) RACE: Voltage:7.68V[0m
+[0;32mI (4964) RACE: =====================speed状态=====================[0m
+[0;32mI (4971) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (5180) RACE: Encoder now: 6989[0m
+[0;32mI (5180) RACE: Encoder:6986, 6976, 7005, 6990[0m
+[0;32mI (5180) RACE: =====================电池状态=====================[0m
+[0;32mI (5185) RACE: Voltage:7.68V[0m
+[0;32mI (5188) RACE: =====================speed状态=====================[0m
+[0;32mI (5195) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (5404) RACE: Encoder now: 7455[0m
+[0;32mI (5404) RACE: Encoder:7452, 7442, 7470, 7457[0m
+[0;32mI (5404) RACE: =====================电池状态=====================[0m
+[0;32mI (5409) RACE: Voltage:7.68V[0m
+[0;32mI (5412) RACE: =====================speed状态=====================[0m
+[0;32mI (5419) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (5628) RACE: Encoder now: 7919[0m
+[0;32mI (5628) RACE: Encoder:7914, 7906, 7936, 7921[0m
+[0;32mI (5628) RACE: =====================电池状态=====================[0m
+[0;32mI (5633) RACE: Voltage:7.68V[0m
+[0;32mI (5636) RACE: =====================speed状态=====================[0m
+[0;32mI (5643) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (5852) RACE: Encoder now: 8385[0m
+[0;32mI (5852) RACE: Encoder:8382, 8372, 8400, 8386[0m
+[0;32mI (5852) RACE: =====================电池状态=====================[0m
+[0;32mI (5857) RACE: Voltage:7.62V[0m
+[0;32mI (5860) RACE: =====================speed状态=====================[0m
+[0;32mI (5867) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (6076) RACE: Encoder now: 8849[0m
+[0;32mI (6076) RACE: Encoder:8845, 8837, 8865, 8851[0m
+[0;32mI (6076) RACE: =====================电池状态=====================[0m
+[0;32mI (6081) RACE: Voltage:7.67V[0m
+[0;32mI (6084) RACE: =====================speed状态=====================[0m
+[0;32mI (6091) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (6300) RACE: Encoder now: 9315[0m
+[0;32mI (6300) RACE: Encoder:9312, 9302, 9330, 9316[0m
+[0;32mI (6300) RACE: =====================电池状态=====================[0m
+[0;32mI (6305) RACE: Voltage:7.68V[0m
+[0;32mI (6308) RACE: =====================speed状态=====================[0m
+[0;32mI (6315) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (6524) RACE: Encoder now: 9780[0m
+[0;32mI (6524) RACE: Encoder:9776, 9767, 9795, 9782[0m
+[0;32mI (6524) RACE: =====================电池状态=====================[0m
+[0;32mI (6529) RACE: Voltage:7.67V[0m
+[0;32mI (6532) RACE: =====================speed状态=====================[0m
+[0;32mI (6539) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (6748) RACE: Encoder now: 10245[0m
+[0;32mI (6748) RACE: Encoder:10241, 10232, 10261, 10246[0m
+[0;32mI (6748) RACE: =====================电池状态=====================[0m
+[0;32mI (6753) RACE: Voltage:7.68V[0m
+[0;32mI (6757) RACE: =====================speed状态=====================[0m
+[0;32mI (6764) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (6973) RACE: Encoder now: 10712[0m
+[0;32mI (6973) RACE: Encoder:10708, 10700, 10728, 10715[0m
+[0;32mI (6973) RACE: =====================电池状态=====================[0m
+[0;32mI (6978) RACE: Voltage:7.68V[0m
+[0;32mI (6982) RACE: =====================speed状态=====================[0m
+[0;32mI (6989) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (7198) RACE: Encoder now: 11179[0m
+[0;32mI (7198) RACE: Encoder:11175, 11167, 11195, 11181[0m
+[0;32mI (7198) RACE: =====================电池状态=====================[0m
+[0;32mI (7203) RACE: Voltage:7.68V[0m
+[0;32mI (7207) RACE: =====================speed状态=====================[0m
+[0;32mI (7214) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (7423) RACE: Encoder now: 11647[0m
+[0;32mI (7423) RACE: Encoder:11643, 11634, 11662, 11649[0m
+[0;32mI (7423) RACE: =====================电池状态=====================[0m
+[0;32mI (7428) RACE: Voltage:7.69V[0m
+[0;32mI (7432) RACE: =====================speed状态=====================[0m
+[0;32mI (7439) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (7648) RACE: Encoder now: 12113[0m
+[0;32mI (7648) RACE: Encoder:12109, 12101, 12130, 12115[0m
+[0;32mI (7648) RACE: =====================电池状态=====================[0m
+[0;32mI (7653) RACE: Voltage:7.68V[0m
+[0;32mI (7657) RACE: =====================speed状态=====================[0m
+[0;32mI (7664) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (7873) RACE: Encoder now: 12581[0m
+[0;32mI (7873) RACE: Encoder:12577, 12568, 12597, 12583[0m
+[0;32mI (7873) RACE: =====================电池状态=====================[0m
+[0;32mI (7878) RACE: Voltage:7.67V[0m
+[0;32mI (7882) RACE: =====================speed状态=====================[0m
+[0;32mI (7889) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (8098) RACE: Encoder now: 13048[0m
+[0;32mI (8098) RACE: Encoder:13044, 13035, 13064, 13050[0m
+[0;32mI (8098) RACE: =====================电池状态=====================[0m
+[0;32mI (8103) RACE: Voltage:7.67V[0m
+[0;32mI (8107) RACE: =====================speed状态=====================[0m
+[0;32mI (8114) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (8323) RACE: Encoder now: 13515[0m
+[0;32mI (8323) RACE: Encoder:13511, 13502, 13531, 13516[0m
+[0;32mI (8323) RACE: =====================电池状态=====================[0m
+[0;32mI (8328) RACE: Voltage:7.67V[0m
+[0;32mI (8332) RACE: =====================speed状态=====================[0m
+[0;32mI (8339) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (8548) RACE: Encoder now: 13982[0m
+[0;32mI (8548) RACE: Encoder:13978, 13970, 13998, 13985[0m
+[0;32mI (8548) RACE: =====================电池状态=====================[0m
+[0;32mI (8553) RACE: Voltage:7.67V[0m
+[0;32mI (8557) RACE: =====================speed状态=====================[0m
+[0;32mI (8564) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (8773) RACE: Encoder now: 14449[0m
+[0;32mI (8773) RACE: Encoder:14446, 14436, 14466, 14451[0m
+[0;32mI (8773) RACE: =====================电池状态=====================[0m
+[0;32mI (8778) RACE: Voltage:7.67V[0m
+[0;32mI (8782) RACE: =====================speed状态=====================[0m
+[0;32mI (8789) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (8998) RACE: Encoder now: 14917[0m
+[0;32mI (8998) RACE: Encoder:14913, 14904, 14932, 14919[0m
+[0;32mI (8998) RACE: =====================电池状态=====================[0m
+[0;32mI (9003) RACE: Voltage:7.67V[0m
+[0;32mI (9007) RACE: =====================speed状态=====================[0m
+[0;32mI (9014) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (9223) RACE: Encoder now: 15384[0m
+[0;32mI (9223) RACE: Encoder:15380, 15371, 15400, 15385[0m
+[0;32mI (9223) RACE: =====================电池状态=====================[0m
+[0;32mI (9228) RACE: Voltage:7.67V[0m
+[0;32mI (9232) RACE: =====================speed状态=====================[0m
+[0;32mI (9239) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (9448) RACE: Encoder now: 15851[0m
+[0;32mI (9448) RACE: Encoder:15849, 15838, 15867, 15853[0m
+[0;32mI (9448) RACE: =====================电池状态=====================[0m
+[0;32mI (9453) RACE: Voltage:7.67V[0m
+[0;32mI (9457) RACE: =====================speed状态=====================[0m
+[0;32mI (9464) RACE: m1_speed: 0.385283,m2_speed: 0.385283,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (9673) RACE: Encoder now: 16317[0m
+[0;32mI (9673) RACE: Encoder:16313, 16305, 16334, 16319[0m
+[0;32mI (9673) RACE: =====================电池状态=====================[0m
+[0;32mI (9678) RACE: Voltage:7.68V[0m
+[0;32mI (9682) RACE: =====================speed状态=====================[0m
+[0;32mI (9689) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (9898) RACE: Encoder now: 16785[0m
+[0;32mI (9898) RACE: Encoder:16781, 16772, 16801, 16787[0m
+[0;32mI (9898) RACE: =====================电池状态=====================[0m
+[0;32mI (9903) RACE: Voltage:7.68V[0m
+[0;32mI (9907) RACE: =====================speed状态=====================[0m
+[0;32mI (9914) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (10123) RACE: Encoder now: 17252[0m
+[0;32mI (10123) RACE: Encoder:17249, 17240, 17267, 17255[0m
+[0;32mI (10123) RACE: =====================电池状态=====================[0m
+[0;32mI (10128) RACE: Voltage:7.60V[0m
+[0;32mI (10132) RACE: =====================speed状态=====================[0m
+[0;32mI (10139) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (10348) RACE: Encoder now: 17719[0m
+[0;32mI (10348) RACE: Encoder:17717, 17706, 17734, 17721[0m
+[0;32mI (10348) RACE: =====================电池状态=====================[0m
+[0;32mI (10353) RACE: Voltage:7.67V[0m
+[0;32mI (10357) RACE: =====================speed状态=====================[0m
+[0;32mI (10364) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (10573) RACE: Encoder now: 18187[0m
+[0;32mI (10573) RACE: Encoder:18184, 18174, 18201, 18190[0m
+[0;32mI (10573) RACE: =====================电池状态=====================[0m
+[0;32mI (10578) RACE: Voltage:7.66V[0m
+[0;32mI (10582) RACE: =====================speed状态=====================[0m
+[0;32mI (10589) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (10798) RACE: Encoder now: 18653[0m
+[0;32mI (10798) RACE: Encoder:18650, 18641, 18668, 18655[0m
+[0;32mI (10798) RACE: =====================电池状态=====================[0m
+[0;32mI (10803) RACE: Voltage:7.67V[0m
+[0;32mI (10807) RACE: =====================speed状态=====================[0m
+[0;32mI (10814) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (11023) RACE: Encoder now: 19121[0m
+[0;32mI (11023) RACE: Encoder:19118, 19108, 19135, 19124[0m
+[0;32mI (11023) RACE: =====================电池状态=====================[0m
+[0;32mI (11028) RACE: Voltage:7.68V[0m
+[0;32mI (11032) RACE: =====================speed状态=====================[0m
+[0;32mI (11039) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (11248) RACE: Encoder now: 19588[0m
+[0;32mI (11248) RACE: Encoder:19585, 19575, 19602, 19590[0m
+[0;32mI (11248) RACE: =====================电池状态=====================[0m
+[0;32mI (11253) RACE: Voltage:7.68V[0m
+[0;32mI (11257) RACE: =====================speed状态=====================[0m
+[0;32mI (11264) RACE: m1_speed: 0.404547,m2_speed: 0.385283,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (11473) RACE: Encoder now: 20055[0m
+[0;32mI (11473) RACE: Encoder:20054, 20041, 20069, 20058[0m
+[0;32mI (11473) RACE: =====================电池状态=====================[0m
+[0;32mI (11478) RACE: Voltage:7.67V[0m
+[0;32mI (11482) RACE: =====================speed状态=====================[0m
+[0;32mI (11489) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (11698) RACE: Encoder now: 20522[0m
+[0;32mI (11698) RACE: Encoder:20519, 20510, 20537, 20525[0m
+[0;32mI (11698) RACE: =====================电池状态=====================[0m
+[0;32mI (11703) RACE: Voltage:7.68V[0m
+[0;32mI (11707) RACE: =====================speed状态=====================[0m
+[0;32mI (11714) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (11923) RACE: Encoder now: 20990[0m
+[0;32mI (11923) RACE: Encoder:20988, 20976, 21004, 20992[0m
+[0;32mI (11923) RACE: =====================电池状态=====================[0m
+[0;32mI (11928) RACE: Voltage:7.67V[0m
+[0;32mI (11932) RACE: =====================speed状态=====================[0m
+[0;32mI (11939) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.404547[0m
+[0;32mI (12148) RACE: Encoder now: 21457[0m
+[0;32mI (12148) RACE: Encoder:21454, 21444, 21470, 21460[0m
+[0;32mI (12148) RACE: =====================电池状态=====================[0m
+[0;32mI (12153) RACE: Voltage:7.68V[0m
+[0;32mI (12157) RACE: =====================speed状态=====================[0m
+[0;32mI (12164) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (12373) RACE: Encoder now: 21924[0m
+[0;32mI (12373) RACE: Encoder:21921, 21911, 21938, 21927[0m
+[0;32mI (12373) RACE: =====================电池状态=====================[0m
+[0;32mI (12378) RACE: Voltage:7.68V[0m
+[0;32mI (12382) RACE: =====================speed状态=====================[0m
+[0;32mI (12389) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.385283,m4_speed: 0.404547[0m
+[0;32mI (12598) RACE: Encoder now: 22391[0m
+[0;32mI (12598) RACE: Encoder:22389, 22378, 22406, 22394[0m
+[0;32mI (12598) RACE: =====================电池状态=====================[0m
+[0;32mI (12603) RACE: Voltage:7.67V[0m
+[0;32mI (12607) RACE: =====================speed状态=====================[0m
+[0;32mI (12614) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (12823) RACE: Encoder now: 22858[0m
+[0;32mI (12823) RACE: Encoder:22855, 22846, 22874, 22860[0m
+[0;32mI (12823) RACE: =====================电池状态=====================[0m
+[0;32mI (12828) RACE: Voltage:7.68V[0m
+[0;32mI (12832) RACE: =====================speed状态=====================[0m
+[0;32mI (12839) RACE: m1_speed: 0.404547,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (13048) RACE: Encoder now: 23324[0m
+[0;32mI (13048) RACE: Encoder:23322, 23311, 23339, 23327[0m
+[0;32mI (13048) RACE: =====================电池状态=====================[0m
+[0;32mI (13053) RACE: Voltage:7.68V[0m
+[0;32mI (13057) RACE: =====================speed状态=====================[0m
+[0;32mI (13064) RACE: m1_speed: 0.385283,m2_speed: 0.404547,m3_speed: 0.404547,m4_speed: 0.385283[0m
+[0;32mI (13073) RACE: MANDATORY STOP[0m
+[0;32mI (13277) RACE: Encoder now: 45[0m
+[0;32mI (13277) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (13277) RACE: =====================电池状态=====================[0m
+[0;32mI (13281) RACE: Voltage:7.74V[0m
+[0;32mI (13285) RACE: =====================speed状态=====================[0m
+[0;32mI (13292) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (13501) RACE: Encoder now: 45[0m
+[0;32mI (13501) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (13501) RACE: =====================电池状态=====================[0m
+[0;32mI (13505) RACE: Voltage:7.74V[0m
+[0;32mI (13509) RACE: =====================speed状态=====================[0m
+[0;32mI (13516) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (13725) RACE: Encoder now: 45[0m
+[0;32mI (13725) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (13725) RACE: =====================电池状态=====================[0m
+[0;32mI (13729) RACE: Voltage:7.73V[0m
+[0;32mI (13733) RACE: =====================speed状态=====================[0m
+[0;32mI (13740) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (13949) RACE: Encoder now: 45[0m
+[0;32mI (13949) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (13949) RACE: =====================电池状态=====================[0m
+[0;32mI (13953) RACE: Voltage:7.74V[0m
+[0;32mI (13957) RACE: =====================speed状态=====================[0m
+[0;32mI (13964) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (14173) RACE: Encoder now: 45[0m
+[0;32mI (14173) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (14173) RACE: =====================电池状态=====================[0m
+[0;32mI (14177) RACE: Voltage:7.74V[0m
+[0;32mI (14181) RACE: =====================speed状态=====================[0m
+[0;32mI (14188) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (14397) RACE: Encoder now: 45[0m
+[0;32mI (14397) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (14397) RACE: =====================电池状态=====================[0m
+[0;32mI (14401) RACE: Voltage:7.74V[0m
+[0;32mI (14405) RACE: =====================speed状态=====================[0m
+[0;32mI (14412) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (14621) RACE: Encoder now: 45[0m
+[0;32mI (14621) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (14621) RACE: =====================电池状态=====================[0m
+[0;32mI (14625) RACE: Voltage:7.74V[0m
+[0;32mI (14629) RACE: =====================speed状态=====================[0m
+[0;32mI (14636) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (14845) RACE: Encoder now: 45[0m
+[0;32mI (14845) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (14845) RACE: =====================电池状态=====================[0m
+[0;32mI (14849) RACE: Voltage:7.75V[0m
+[0;32mI (14853) RACE: =====================speed状态=====================[0m
+[0;32mI (14860) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (15069) RACE: Encoder now: 45[0m
+[0;32mI (15069) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (15069) RACE: =====================电池状态=====================[0m
+[0;32mI (15073) RACE: Voltage:7.74V[0m
+[0;32mI (15077) RACE: =====================speed状态=====================[0m
+[0;32mI (15084) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (15293) RACE: Encoder now: 45[0m
+[0;32mI (15293) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (15293) RACE: =====================电池状态=====================[0m
+[0;32mI (15297) RACE: Voltage:7.74V[0m
+[0;32mI (15301) RACE: =====================speed状态=====================[0m
+[0;32mI (15308) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (15517) RACE: Encoder now: 45[0m
+[0;32mI (15517) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (15517) RACE: =====================电池状态=====================[0m
+[0;32mI (15521) RACE: Voltage:7.74V[0m
+[0;32mI (15525) RACE: =====================speed状态=====================[0m
+[0;32mI (15532) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (15741) RACE: Encoder now: 45[0m
+[0;32mI (15741) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (15741) RACE: =====================电池状态=====================[0m
+[0;32mI (15745) RACE: Voltage:7.74V[0m
+[0;32mI (15749) RACE: =====================speed状态=====================[0m
+[0;32mI (15756) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (15965) RACE: Encoder now: 45[0m
+[0;32mI (15965) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (15965) RACE: =====================电池状态=====================[0m
+[0;32mI (15969) RACE: Voltage:7.75V[0m
+[0;32mI (15973) RACE: =====================speed状态=====================[0m
+[0;32mI (15980) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (16189) RACE: Encoder now: 45[0m
+[0;32mI (16189) RACE: Encoder:45, 45, 44, 49[0m
+[0;32mI (16189) RACE: =====================电池状态=====================[0m
+[0;32mI (16193) RACE: Voltage:7.74V[0m
+[0;32mI (16197) RACE: =====================speed状态=====================[0m
+[0;32mI (16204) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (16413) RACE: Encoder now: 52[0m
+[0;32mI (16413) RACE: Encoder:70, 45, 44, 49[0m
+[0;32mI (16413) RACE: =====================电池状态=====================[0m
+[0;32mI (16417) RACE: Voltage:7.74V[0m
+[0;32mI (16421) RACE: =====================speed状态=====================[0m
+[0;32mI (16428) RACE: m1_speed: 0.057792,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (16637) RACE: Encoder now: 59[0m
+[0;32mI (16637) RACE: Encoder:99, 45, 46, 49[0m
+[0;32mI (16637) RACE: =====================电池状态=====================[0m
+[0;32mI (16641) RACE: Voltage:7.74V[0m
+[0;32mI (16645) RACE: =====================speed状态=====================[0m
+[0;32mI (16652) RACE: m1_speed: -0.019264,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (16861) RACE: Encoder now: 58[0m
+[0;32mI (16861) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (16861) RACE: =====================电池状态=====================[0m
+[0;32mI (16865) RACE: Voltage:7.75V[0m
+[0;32mI (16869) RACE: =====================speed状态=====================[0m
+[0;32mI (16876) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (17085) RACE: Encoder now: 58[0m
+[0;32mI (17085) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (17085) RACE: =====================电池状态=====================[0m
+[0;32mI (17089) RACE: Voltage:7.75V[0m
+[0;32mI (17093) RACE: =====================speed状态=====================[0m
+[0;32mI (17100) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (17309) RACE: Encoder now: 58[0m
+[0;32mI (17309) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (17309) RACE: =====================电池状态=====================[0m
+[0;32mI (17313) RACE: Voltage:7.75V[0m
+[0;32mI (17317) RACE: =====================speed状态=====================[0m
+[0;32mI (17324) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (17533) RACE: Encoder now: 58[0m
+[0;32mI (17533) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (17533) RACE: =====================电池状态=====================[0m
+[0;32mI (17537) RACE: Voltage:7.74V[0m
+[0;32mI (17541) RACE: =====================speed状态=====================[0m
+[0;32mI (17548) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (17757) RACE: Encoder now: 58[0m
+[0;32mI (17757) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (17757) RACE: =====================电池状态=====================[0m
+[0;32mI (17761) RACE: Voltage:7.75V[0m
+[0;32mI (17765) RACE: =====================speed状态=====================[0m
+[0;32mI (17772) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (17981) RACE: Encoder now: 58[0m
+[0;32mI (17981) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (17981) RACE: =====================电池状态=====================[0m
+[0;32mI (17985) RACE: Voltage:7.75V[0m
+[0;32mI (17989) RACE: =====================speed状态=====================[0m
+[0;32mI (17996) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (18205) RACE: Encoder now: 58[0m
+[0;32mI (18205) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (18205) RACE: =====================电池状态=====================[0m
+[0;32mI (18209) RACE: Voltage:7.75V[0m
+[0;32mI (18213) RACE: =====================speed状态=====================[0m
+[0;32mI (18220) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (18429) RACE: Encoder now: 58[0m
+[0;32mI (18429) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (18429) RACE: =====================电池状态=====================[0m
+[0;32mI (18433) RACE: Voltage:7.74V[0m
+[0;32mI (18437) RACE: =====================speed状态=====================[0m
+[0;32mI (18444) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (18653) RACE: Encoder now: 58[0m
+[0;32mI (18653) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (18653) RACE: =====================电池状态=====================[0m
+[0;32mI (18657) RACE: Voltage:7.74V[0m
+[0;32mI (18661) RACE: =====================speed状态=====================[0m
+[0;32mI (18668) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (18877) RACE: Encoder now: 58[0m
+[0;32mI (18877) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (18877) RACE: =====================电池状态=====================[0m
+[0;32mI (18881) RACE: Voltage:7.74V[0m
+[0;32mI (18885) RACE: =====================speed状态=====================[0m
+[0;32mI (18892) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (19101) RACE: Encoder now: 58[0m
+[0;32mI (19101) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (19101) RACE: =====================电池状态=====================[0m
+[0;32mI (19105) RACE: Voltage:7.74V[0m
+[0;32mI (19109) RACE: =====================speed状态=====================[0m
+[0;32mI (19116) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (19325) RACE: Encoder now: 58[0m
+[0;32mI (19325) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (19325) RACE: =====================电池状态=====================[0m
+[0;32mI (19329) RACE: Voltage:7.75V[0m
+[0;32mI (19333) RACE: =====================speed状态=====================[0m
+[0;32mI (19340) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (19549) RACE: Encoder now: 58[0m
+[0;32mI (19549) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (19549) RACE: =====================电池状态=====================[0m
+[0;32mI (19553) RACE: Voltage:7.74V[0m
+[0;32mI (19557) RACE: =====================speed状态=====================[0m
+[0;32mI (19564) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m
+[0;32mI (19773) RACE: Encoder now: 58[0m
+[0;32mI (19773) RACE: Encoder:96, 44, 45, 48[0m
+[0;32mI (19773) RACE: =====================电池状态=====================[0m
+[0;32mI (19777) RACE: Voltage:7.74V[0m
+[0;32mI (19781) RACE: =====================speed状态=====================[0m
+[0;32mI (19788) RACE: m1_speed: 0.000000,m2_speed: 0.000000,m3_speed: 0.000000,m4_speed: 0.000000[0m

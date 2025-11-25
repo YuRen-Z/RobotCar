@@ -1,6 +1,5 @@
 
-sudo ip link set ens33 up
-
+sudo ip link set ens33 up &&
 sudo dhclient -v ens33
 
 
@@ -12,3 +11,5 @@ cd ~/esp/Samples/esp32_samples/led
 idf.py build
 idf.py flash monitor
 idf.py build flash monitor
+
+
